@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./java.js/script.js">
+    <title>Portfolio</title>
+</head>
+
+
+
+<body>
+    <div class="principal" id="navegaçao">
+        <nav>
+            <h2 class="texto">Portfo<span>lio</span></h2>
+            <ul>
+                <ul>
+                    <li><a href="#navegacao">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Fale Comigo</a></li>
+                </ul>
+                
+            </ul>
+        </nav>
+        
+        <div>
+            <h1>Pedro <span>Abreu</span></h1>
+            <h2> <span>Tecnologia </span>e Saude</h2>
+        </div>
+    </div>
+    <section id="sobre-mim">
+        <img src="./imagem/minha_foto-removebg-preview.png" alt="perfil">
+        <div>
+            <h2>Sobre mim</h2>
+            <p>Atuo na area de Tecnologia em geral , mas tambem sou formado na area da saude , tendo uma boa experiencia com saude e um leve grau de experiencia com Tecnologia , independete do serviço sempre dou meu melhor como esta sendo o caso desse portfolio .</p>
+           <a href="https://www.instagram.com/pedro_abreu_jr/" target="_blank"><button> Acione-me... </button> </a> 
+        </div>
+    </section>
+    <footer id="contato">
+        <h5> Pedro <span>Abreu</span></h5>
+        <p>Para mais informações</p>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="./imagem/linkedin-social-media-icon-design-template-vector-png_127000.jpg" alt="linkedin"></a>
+            <a href="https://api.whatsapp.com/send?phone=5532998051388&text=Ola%20tudo%20bem%20,%20voce%20acaba%20de%20acessar%20meu%20link%20wpp%20,%20venha%20fazer%20seu%20or%C3%A7amento%20para%20algum%20servi%C3%A7o%20de%20TI%20ou%20Saude%20,%20obrigado%20pela%20preferencia!!!" target="_blank"><img src="./imagem/10000486.jpg" alt="phone"></a>
+            <a href="https://www.youtube.com/@pedroabreuofc" target="_blank"><img src="./imagem/yt.jpg" alt="youtube"></a>
+            <a href="https://www.instagram.com/pedro_abreu_jr/" target="_blank"><img src="./imagem/instagram-logo-5744708_1280.webp" alt="insta"></a>
+
+        </div>
+    </footer>
+</body>
+
+
+<script>
+   alert("voce acessou essa pagina")
+   
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtém os links de navegação
+            const links = document.querySelectorAll('nav ul a');
+        
+            // Para cada link, adiciona um ouvinte de evento de clique
+            links.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Impede o comportamento padrão do link
+        
+                    // Obtém o destino do link (o ID da seção correspondente)
+                    const targetId = link.getAttribute('href').slice(1);
+                    const targetSection = document.getElementById(targetId);
+        
+                    if (targetSection) {
+                        // Role suavemente para a seção
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+        </script>
+<script>
+    window.prompt("digite aqui seu nome")
+</script>        
+</html>
